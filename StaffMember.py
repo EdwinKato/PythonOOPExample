@@ -5,10 +5,11 @@ class StaffMember(Person):
     def __init__(self, name, surname):
         super(StaffMember, self).__init__(name, surname)
         self.courses_taught = []
+        self.__accesslevel = "Full access"
 
     # Ploymorphism Subclass define different behavior
     def get_access_level(self):
-        return "Full access"
+        return self.__accesslevel
 
     def add_course(self, course):
         self.courses_taught.append(course)
