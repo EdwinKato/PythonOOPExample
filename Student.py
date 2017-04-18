@@ -16,3 +16,7 @@ class Student(Person):
 
     def setStudentId(self, id):
         self.__student_id = id
+
+    # Ploymorphism Subclass define different behavior
+    def get_access_level(self):
+        return "Limited"

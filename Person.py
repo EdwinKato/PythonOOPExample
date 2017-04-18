@@ -11,3 +11,6 @@ class Person(object):
 
     def increment_no_of_people(self):
         Person.person_count += 1
+
+    def get_access_level(self):
+        raise NotImplementedError("Subclass must implement abstract method")
